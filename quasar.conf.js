@@ -106,13 +106,6 @@ module.exports = function (ctx) {
 		devServer: {
 			https: false,
 			port: 8080,
-			proxy: {
-				'/api': {
-					target: 'https://player.banground.fun/',
-					secure: true,
-					changeOrigin: true
-				}
-			},
 			open: true // opens browser window automatically
 		},
 
